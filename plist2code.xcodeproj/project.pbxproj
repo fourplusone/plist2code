@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C27B2251497817F00FCE5A0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C27B2241497817F00FCE5A0 /* SenTestingKit.framework */; };
+		2C27B2271497817F00FCE5A0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C27B2261497817F00FCE5A0 /* Cocoa.framework */; };
+		2C27B2311497817F00FCE5A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C27B22F1497817F00FCE5A0 /* InfoPlist.strings */; };
+		2C27B2341497817F00FCE5A0 /* plist2codeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C27B2331497817F00FCE5A0 /* plist2codeTests.m */; };
 		2CAD58521495788600C6377C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAD58511495788600C6377C /* Foundation.framework */; };
 		2CAD58551495788600C6377C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD58541495788600C6377C /* main.m */; };
 		2CAD58591495788600C6377C /* plist2code.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CAD58581495788600C6377C /* plist2code.1 */; };
@@ -26,14 +30,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C27B2231497817F00FCE5A0 /* plist2codeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plist2codeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C27B2241497817F00FCE5A0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2C27B2261497817F00FCE5A0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2C27B2291497817F00FCE5A0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2C27B22A1497817F00FCE5A0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2C27B22B1497817F00FCE5A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C27B22E1497817F00FCE5A0 /* plist2codeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "plist2codeTests-Info.plist"; sourceTree = "<group>"; };
+		2C27B2301497817F00FCE5A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C27B2321497817F00FCE5A0 /* plist2codeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plist2codeTests.h; sourceTree = "<group>"; };
+		2C27B2331497817F00FCE5A0 /* plist2codeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = plist2codeTests.m; sourceTree = "<group>"; };
+		2C27B2351497817F00FCE5A0 /* plist2codeTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "plist2codeTests-Prefix.pch"; sourceTree = "<group>"; };
 		2CAD584D1495788600C6377C /* plist2code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = plist2code; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAD58511495788600C6377C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CAD58541495788600C6377C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2CAD58571495788600C6377C /* plist2code-Prefix.pch */ = {isa = PBXFileReference; path = "plist2code-Prefix.pch"; sourceTree = "<group>"; };
+		2CAD58571495788600C6377C /* plist2code-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "plist2code-Prefix.pch"; sourceTree = "<group>"; };
 		2CAD58581495788600C6377C /* plist2code.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = plist2code.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C27B21F1497817F00FCE5A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C27B2251497817F00FCE5A0 /* SenTestingKit.framework in Frameworks */,
+				2C27B2271497817F00FCE5A0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CAD584A1495788600C6377C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +69,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C27B2281497817F00FCE5A0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C27B2291497817F00FCE5A0 /* AppKit.framework */,
+				2C27B22A1497817F00FCE5A0 /* CoreData.framework */,
+				2C27B22B1497817F00FCE5A0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2C27B22C1497817F00FCE5A0 /* plist2codeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C27B2321497817F00FCE5A0 /* plist2codeTests.h */,
+				2C27B2331497817F00FCE5A0 /* plist2codeTests.m */,
+				2C27B22D1497817F00FCE5A0 /* Supporting Files */,
+			);
+			path = plist2codeTests;
+			sourceTree = "<group>";
+		};
+		2C27B22D1497817F00FCE5A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C27B22E1497817F00FCE5A0 /* plist2codeTests-Info.plist */,
+				2C27B22F1497817F00FCE5A0 /* InfoPlist.strings */,
+				2C27B2351497817F00FCE5A0 /* plist2codeTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2CAD58421495788600C6377C = {
 			isa = PBXGroup;
 			children = (
 				2CAD58531495788600C6377C /* plist2code */,
+				2C27B22C1497817F00FCE5A0 /* plist2codeTests */,
 				2CAD58501495788600C6377C /* Frameworks */,
 				2CAD584E1495788600C6377C /* Products */,
 			);
@@ -58,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				2CAD584D1495788600C6377C /* plist2code */,
+				2C27B2231497817F00FCE5A0 /* plist2codeTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				2CAD58511495788600C6377C /* Foundation.framework */,
+				2C27B2241497817F00FCE5A0 /* SenTestingKit.framework */,
+				2C27B2261497817F00FCE5A0 /* Cocoa.framework */,
+				2C27B2281497817F00FCE5A0 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +150,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C27B2221497817F00FCE5A0 /* plist2codeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C27B2381497817F00FCE5A0 /* Build configuration list for PBXNativeTarget "plist2codeTests" */;
+			buildPhases = (
+				2C27B21E1497817F00FCE5A0 /* Sources */,
+				2C27B21F1497817F00FCE5A0 /* Frameworks */,
+				2C27B2201497817F00FCE5A0 /* Resources */,
+				2C27B2211497817F00FCE5A0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = plist2codeTests;
+			productName = plist2codeTests;
+			productReference = 2C27B2231497817F00FCE5A0 /* plist2codeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		2CAD584C1495788600C6377C /* plist2code */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CAD585C1495788600C6377C /* Build configuration list for PBXNativeTarget "plist2code" */;
@@ -130,11 +207,47 @@
 			projectRoot = "";
 			targets = (
 				2CAD584C1495788600C6377C /* plist2code */,
+				2C27B2221497817F00FCE5A0 /* plist2codeTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2C27B2201497817F00FCE5A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C27B2311497817F00FCE5A0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C27B2211497817F00FCE5A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2C27B21E1497817F00FCE5A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C27B2341497817F00FCE5A0 /* plist2codeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CAD58491495788600C6377C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,7 +258,42 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		2C27B22F1497817F00FCE5A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C27B2301497817F00FCE5A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		2C27B2361497817F00FCE5A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plist2codeTests/plist2codeTests-Prefix.pch";
+				INFOPLIST_FILE = "plist2codeTests/plist2codeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2C27B2371497817F00FCE5A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plist2codeTests/plist2codeTests-Prefix.pch";
+				INFOPLIST_FILE = "plist2codeTests/plist2codeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		2CAD585A1495788600C6377C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -214,6 +362,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C27B2381497817F00FCE5A0 /* Build configuration list for PBXNativeTarget "plist2codeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C27B2361497817F00FCE5A0 /* Debug */,
+				2C27B2371497817F00FCE5A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		2CAD58471495788600C6377C /* Build configuration list for PBXProject "plist2code" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -230,6 +386,7 @@
 				2CAD585E1495788600C6377C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
